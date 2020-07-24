@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyLearning: The E-Learning Tool</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/54f27bdb7c.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-md sticky-top">
+			<a class="navbar-Brand" href="#">EasyLearning(Logo)</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+
+			<div class="collapse navbar-right navbar-collapse" id="collapsibleNavbar">
+				<ul class="nav" id="topNav">
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="topLinks">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#aboutSection" id="topLinks">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="topLinks">Contact</a>
+					</li>
+				</ul>
+			</div>
+    </nav>
+    
+    <div class="container container-fluid" id="jumbo">
+			<div class="jumbotron jumbotron-fluid">
+				
+        <%= image_tag("learning2.jpg", alt:"Laptop and some coffee", id:"Home", style:"height:100%; width: 100%; margin: 0 auto")%>
+        
+          <button type="button" class="btn">Register</button>
+			
+			</div>
+			
+		</div>
+    <%= yield %>
+
+    <footer id="stickyfooter"  class="py-4 footer">
+			<ul class="footerlinks">
+				<li href="#">Contact</li>
+				<li href="#">EasyLearning</li>
+			</ul>	
+		</footer>
+
+  </body>
+</html>
