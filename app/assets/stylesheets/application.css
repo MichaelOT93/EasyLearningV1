@@ -24,13 +24,18 @@ body {
      text-align: right;
      padding: 10px;
      margin-bottom: 5px;
-
- }
-
- .nav-link {
-     color: white;
      
+
  }
+
+.nav-item {
+    padding: 0px 20px;
+    
+}
+
+.nav-item a {
+    color: white;
+}
 
  #topNav {
      position: relative;
@@ -39,7 +44,7 @@ body {
 
  #jumbo {
      text-align: center;
-     height: 600px;
+     height: 700px;
  }
 
  .jumbotron.jumbotron-fluid {
@@ -47,24 +52,50 @@ body {
      height: 100%;
  }
 
+ 
+ .jumbotron.jumbotron-fluid h1 {
+     position: relative;
+     bottom: 600px;
+     padding: 10px;
+     background-color: white;
+     opacity: 80%;
+     width: 60%;
+     margin: 0 auto;
+ }
+ 
+
 
  #productCon{
     max-width: 1440px;
  }
 
+#profileButtons {
+    position: relative; 
+    bottom: 350px;
+}
+
  .btn {
      z-index: 10;
-     position: relative;
-     bottom: 350px;
      background-color: #72F1BE;
      color: white;
      padding: 10px 20px;
+ }
+
+ #cards{
+     bottom: 0px;
+ }
+
+ #signin{
+     bottom: 280px;
+     right: 105px;
+     background-color: turquoise;
  }
  
 
  .footer {
      padding: 0;
      color: white;
+     width: 100%;
  }
 
  .footerlinks{

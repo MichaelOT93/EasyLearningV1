@@ -1,0 +1,43 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#homeRow {
+    position: relative; 
+    bottom: 550px;
+}
+
+#homeCard {
+    opacity: 80%;
+}
+
+#homebtns {
+    position: relative;
+    bottom: 500px;
+}
+
+#courseButtons {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#loginbtn {
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#reg {
+    position: relative;
+    bottom: 450px;
+}
+
+#regbtn {
+    margin: 0 auto;
+    background-color: #0FD9CB;
+ 
+}
+
+#login{
+    position: relative;
+    bottom: 430px;
+}

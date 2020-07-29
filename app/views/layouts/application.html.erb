@@ -3,7 +3,8 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EasyLearning: The E-Learning Tool</title>
+  <title><%= yield(:title) %> | EasyLearning: The E-Learning Tool</title>
+  <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,32 +26,34 @@
 
 			<div class="collapse navbar-right navbar-collapse" id="collapsibleNavbar">
 				<ul class="nav" id="topNav">
+          <li class="nav-item">
+						  <%= link_to "Home", '/home' %>
+          </li>
+          <li class="nav-item">
+          <%= link_to "Coursess", '/products' %>
+          </li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" id="topLinks">Home</a>
+             <%= link_to "About", '/about' %>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#aboutSection" id="topLinks">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" id="topLinks">Contact</a>
+						 <%= link_to "Contact", '/contact' %>
 					</li>
 				</ul>
 			</div>
     </nav>
     
-    <div class="container container-fluid" id="jumbo">
-			<div class="jumbotron jumbotron-fluid">
-				
-        <%= image_tag("learning2.jpg", alt:"Laptop and some coffee", id:"Home", style:"height:100%; width: 100%; margin: 0 auto")%>
-        
-          <button type="button" class="btn">Register</button>
-			
-			</div>
-			
-		</div>
-    <%= yield %>
+    
 
-    <footer id="stickyfooter"  class="py-4 footer">
+
+
+        <%= yield %> 
+			
+			
+			
+	
+   
+
+    <footer id="stickyfooter"  class="fixed-bottom">
 			<ul class="footerlinks">
 				<li href="#">Contact</li>
 				<li href="#">EasyLearning</li>

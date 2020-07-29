@@ -1,0 +1,85 @@
+<% provide(:title, "Home") %>
+
+
+<div class="container container-fluid" id="jumbo">
+	<div class="jumbotron jumbotron-fluid">
+				
+        <%= image_tag("learning2.jpg", alt:"Laptop and some coffee", id:"Home", style:"height:100%; width: 100%; margin: 0 auto")%>
+    
+        <h1>Popular Courses</h1>
+        <div class="row" id="homeRow">
+        
+            <div class="col-md-4">
+                <div class="card" id="homeCard">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href= "/products/5" class="btn", id="courseButtons">Learn More</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="homeCard">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href= "/products/1" class="btn", id="courseButtons">Learn More</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body" id="homeCard">
+                        <h5 class="card-title">JavaScript</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href= "/products/3" class="btn", id="courseButtons">Learn More</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+            <div class="row" id="homebtns">
+
+                <a href= "/products" class="btn", id="courseButtons">All Courses</a>
+            </div>
+
+            
+
+
+           
+
+         
+
+        
+            <div class="row" id="reg">
+                <button type="button" class="btn" id="regbtn">
+                <% if user_signed_in? %>
+                    <%= link_to 'Edit Profile', edit_user_registration_path %>
+                <% else %>
+                    <%= link_to 'Register', new_user_registration_path %></button>
+                <% end %>
+            </div>
+
+            <div class="row"  id="login">
+
+                <button type="button" class="btn" id="loginbtn">
+                <% if user_signed_in? %>
+                    <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+                <% else %>
+                    <%= link_to 'Sign in', new_user_session_path %></button>
+                <% end %>
+
+            </div>
+
+      
+        </div>
+      </div>
+    </div>
+
+</div>
+    
